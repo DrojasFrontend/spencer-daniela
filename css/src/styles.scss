@@ -639,7 +639,6 @@ body {
 				width: 100%;
 				z-index: 1;
 				pointer-events: none;
-				
 			}
 
 			&-top {
@@ -1770,5 +1769,6 @@ input[type="radio"]:checked + span:before {
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
-	background: none !important;
+	background-color: none !important;
 }
+
