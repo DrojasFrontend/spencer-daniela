@@ -10,7 +10,7 @@
             display_icon($icon_name); 
         ?>
         </button>
-          <img class="modal-image" src="<?php echo IMG_BASE . 'tuxedo.webp' ?>" alt="" id="" />
+          <img class="modal-image" src="<?php echo IMG_BASE . 'boda-dresscode-daniela-y-spencer.webp' ?>" alt="" id="" />
       </div>
     </div>
   </section>
@@ -25,7 +25,7 @@
             display_icon($icon_name); 
         ?>
         </button>
-        <img class="modal-image" src="<?php echo IMG_BASE . 'regalos-bombace-new.webp' ?>" alt="" id="" />
+        <img class="modal-image" src="<?php echo IMG_BASE . 'cocktail-casual-daniela-y-spencer.webp' ?>" alt="" id="" />
       </div>
     </div>
   </section>
@@ -39,7 +39,7 @@
             display_icon($icon_name); 
         ?>
         </button>
-        <img class="modal-image" src="<?php echo IMG_BASE . 'new-dresscode-desktop.webp' ?>" alt="" id="" />
+        <img class="modal-image" src="<?php echo IMG_BASE . 'makani-beach-daniela-y-spencer.webp' ?>" alt="" id="" />
       </div>
     </div>
   </section>

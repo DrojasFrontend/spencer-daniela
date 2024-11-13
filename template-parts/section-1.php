@@ -1,6 +1,6 @@
 <section class="section1">
     <img class="section1__img desktop" src="<?php echo IMG_BASE . 'img-1.webp'?>" alt="">
-    <img class="section1__img mobile" src="<?php echo IMG_BASE . 'img-1-mobile.webp'?>" alt="">
+    <img class="section1__img mobile" src="<?php echo IMG_BASE . 'img-1-mobile.png'?>" alt="">
     <div class="section1__content">
         <img class="section1__logo" src="<?php echo IMG_BASE . 'logo.svg'?>" alt="">
         <span class="space space--50"></span>
@@ -12,6 +12,7 @@
         <span class="space space--50 desktop"></span>
         <span class="space space--50 mobile"></span>
         <div class="box">
+            <img class="section1__img-negra" src="<?php echo IMG_BASE . 'palenquera.png'?>" alt="">
             <h2 class="font--blancha heading--96 color--836923">Wedding</h2>
             <p class="heading--32 color--836923">NUESTRA BODA</p>
             <span class="space space--20"></span>
@@ -27,7 +28,7 @@
             <span class="space space--20"></span>
             <p class="heading--32 color--836923">CARTAGENA, COLOMBIA</p>
             <span class="space space--20"></span>
-            <a href="#" class="button button--primary button--center" target="_blank">LOCATION</a>
+            <a href="https://maps.app.goo.gl/WNSrwuTCg1mGmm3D9" class="button button--primary button--center" target="_blank">LOCATION</a>
             <span class="space space--20"></span>
             <img src="<?php echo IMG_BASE . 'boda-daniela-y-spencer.png' ?>" alt="">
             <p class="heading--32 color--836923">DRESS CODE</p>

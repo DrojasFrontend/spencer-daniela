@@ -8,6 +8,14 @@ $places = [
     "img" => IMG_BASE . 'icon-hotels.svg',
     "places" => [
         [
+            "name" => "Hyatt Regency Hotel",
+            "address" => "Cra. 1 # 12 - 118",
+            "city" => "Cartagena, Colombia",
+            "phone" => "+57 (605) 6941234",
+            "link" => "https://www.hyatt.com/hyatt-regency/es-ES/ctgrc-hyatt-regency-cartagena",
+            "image" => IMG_BASE . 'places-cartagena/hoteles-14.webp',
+        ],
+        [
             "name" => "HOTEL INTERCONTINENTAL",
             "address" => "Cra. 1 # 5 - 01",
             "city" => "Cartagena, Colombia",
@@ -118,14 +126,6 @@ $places = [
             "phone" => "+57 300 9121453",
             "link" => "https://www.bevoila.com/home-es",
             "image" => IMG_BASE . 'places-cartagena/hoteles-13.webp',
-        ],
-        [
-            "name" => "Hyatt Regency",
-            "address" => "Cra. 1 # 12 - 118",
-            "city" => "Cartagena, Colombia",
-            "phone" => "+57 (605) 6941234",
-            "link" => "https://www.hyatt.com/hyatt-regency/es-ES/ctgrc-hyatt-regency-cartagena",
-            "image" => IMG_BASE . 'places-cartagena/hoteles-14.webp',
         ],
         [
             "name" => "Hotel Estelar",

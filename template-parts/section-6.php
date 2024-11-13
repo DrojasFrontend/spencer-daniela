@@ -55,23 +55,25 @@ $places = [
         <span class="line line--small"></span>
         <span class="space space--20"></span>
         <span class="space space--10"></span>
-        <div class="text-traslate-es">
-          <p class="heading--24 color--000">
-          We are thrilled to be hosting our wedding in Cartagena, Colombia's coastal gem. This city, designated as a UNESCO world heritage site, stands as one of South America's most significant cultural treasures. The walls of Cartagena de Indias grace the historical center, known as "the walled city," where you can discover squares, cobblestone streets, and exquisite, vibrant colonial buildings.
-          </p>
-          <span class="space space--20"></span>
-          <p class="heading--24 color--000">
-          The ultimate way to experience Cartagena is by strolling through it, immersing yourself in the maze of narrow streets and lush green plazas. We highly recommend lodging within the walled city, where everything is conveniently within walking distance. The streets are alive with constant live music, splendid restaurants, and quirky bars, all contributing to the vibrant atmosphere of Cartagena.
-          </p>
-        </div>
-        <div class="text-traslate-en" style="display: none">
-          <p class="heading--24 color--000">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor pariatur dignissimos provident molestias, deserunt eius iure harum, officia fugit sapiente velit consequuntur recusandae sunt, ipsam porro natus! Odit, animi delectus.
-          </p>
-          <span class="space space--20"></span>
-          <p class="heading--24 color--000">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates mollitia blanditiis assumenda laudantium ad, ipsa eaque nesciunt! In beatae ab sunt porro, aspernatur, adipisci totam eum rerum magnam, ipsum hic!
-          </p>
+        <div class="text-traslate">
+          <div class="text-traslate-es">
+            <p class="heading--24 color--000">
+            We are thrilled to be hosting our wedding in Cartagena, Colombia's coastal gem. This city, designated as a UNESCO world heritage site, stands as one of South America's most significant cultural treasures. The walls of Cartagena de Indias grace the historical center, known as "the walled city," where you can discover squares, cobblestone streets, and exquisite, vibrant colonial buildings.
+            </p>
+            <span class="space space--20"></span>
+            <p class="heading--24 color--000">
+            The ultimate way to experience Cartagena is by strolling through it, immersing yourself in the maze of narrow streets and lush green plazas. We highly recommend lodging within the walled city, where everything is conveniently within walking distance. The streets are alive with constant live music, splendid restaurants, and quirky bars, all contributing to the vibrant atmosphere of Cartagena.
+            </p>
+          </div>
+          <div class="text-traslate-en">
+            <p class="heading--24 color--000">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor pariatur dignissimos provident molestias, deserunt eius iure harum, officia fugit sapiente velit consequuntur recusandae sunt, ipsam porro natus! Odit, animi delectus.
+            </p>
+            <span class="space space--20"></span>
+            <p class="heading--24 color--000">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates mollitia blanditiis assumenda laudantium ad, ipsa eaque nesciunt! In beatae ab sunt porro, aspernatur, adipisci totam eum rerum magnam, ipsum hic!
+            </p>
+          </div>
         </div>
         <span class="space space--20"></span>
         <button type="button" class="traslate color--A07F2B" data-traslate>Leer en Español</button>

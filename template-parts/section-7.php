@@ -3,17 +3,17 @@ $placesCartagena = [
     [
         "img" => "cartagena-1.png",
         "name" => "Teatro Heredia",
-        "copy" => "Magnífico de estilo ecléctico diseñado por Luis Felipe Jaspe, el mismo arquitecto que creó la Torre del Reloj de Cartagena.",
+        "copy" => "Magnificent eclectic-style building erected in 1902, designed by Luis Felipe Jaspe, the same architect who created the Cartagena Clock Tower.",
     ],
     [
         "img" => "cartagena-2.png",
         "name" => "Murallas de Cartagena",
-        "copy" => "Fortificación que tardó más de cien años en completarse, llevada a cabo por etapas desde 1586 hasta 1699, abarcando el perímetro del centro de la ciudad vieja, San Diego y Getsemaní.",
+        "copy" => "Forification that took more than a hundred years to complete, carried out in stages from 1586 to 1699, encompassing the perimeter of the center of the old city, San Diego and Getsemaní.",
     ],
     [
         "img" => "cartagena-3.png",
         "name" => "Torre del Reloj",
-        "copy" => "Famosa puerta de entrada a la ciudad amurallada, caracterizada por su portada barroca de piedra que precede a una imponente estructura.",
+        "copy" => "Famous gateway to the walled city, characterized by its baroque stone doorway that precedes an imposing structure.",
     ],
     [
         "img" => "cartagena-4.png",

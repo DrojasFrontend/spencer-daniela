@@ -29,10 +29,10 @@ $(".accordion-link").click(function (e) {
 });
 
 $("[data-traslate]").on("click", function() {
-  $(".text-traslate-es").fadeToggle();
-  $(".text-traslate-en").fadeToggle();
+  $(".text-traslate-es").toggleClass("active");
+  $(".text-traslate-en").toggleClass("active");
   if($(this).text() == 'Leer en Español') {
-    $(this).text("Leer en Ingles")
+    $(this).text("Read in English")
   } else {
     $(this).text("Leer en Español")
   }

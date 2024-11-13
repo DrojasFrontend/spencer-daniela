@@ -10,7 +10,7 @@
             <span class="space space--20"></span>
             <span class="line line--small"></span>
             <span class="space space--50"></span>
-            <p class="heading--48 color--836923">COCKTAIL HOUR,</p>
+            <p class="heading--48 color--836923">COCKTAIL HOUR</p>
             <p class="heading--36 color--836923">HORA DE CÓCTEL</p>
             <span class="space space--20"></span>
             <span class="line line--small"></span>
@@ -23,7 +23,7 @@
             <p class="heading--32 color--000">EL MIRADOR GASTRO BAR</p>
             <p class="heading--26 color--000">CARTAGENA, COLOMBIA</p>            
             <span class="space space--20"></span>
-            <a href="#" class="button button--primary button--center" target="_blank">LOCATION</a>
+            <a href="https://maps.app.goo.gl/VGaukuhshzP9s5uD7" class="button button--primary button--center" target="_blank">LOCATION</a>
             <span class="space space--20"></span>
             <p class="heading--22 color--836923">This event is exclusively reserved for guests </p>
             <p class="heading--22 color--836923">aged 18 and over.</p>
@@ -58,7 +58,7 @@
             <p class="heading--32 color--000">MAKANI</p>
             <p class="heading--26 color--000">BEACH CLUB</p>
             <span class="space space--10"></span>
-            <a href="#" class="button button--primary button--center" target="_blank">LOCATION</a>
+            <a href="https://maps.app.goo.gl/FtQht5ayqg5RKvPv7" class="button button--primary button--center" target="_blank">LOCATION</a>
 
             <div class="grid grid--2 grid--column-10 grid--align-center">
               <div class="text--right">
