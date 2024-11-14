@@ -312,7 +312,7 @@ body {
 			}
 
 			a {
-				-webkit-text-stroke-width: 0.3px;
+				-webkit-text-stroke-width: 0.5px;
 
 				@media only screen and (min-width: 1024px) {
 					display: flex;
@@ -1028,7 +1028,7 @@ body {
 			.heading--14 {
 				line-height: 20px;
 				letter-spacing: normal;
-				-webkit-text-stroke: 0.25px;
+				-webkit-text-stroke: 0.5px;
 			}
 		}
 
