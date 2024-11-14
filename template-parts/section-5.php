@@ -12,8 +12,8 @@
     <p class="heading--24 color--000">Access available from January 10, 2025 </p>
     <p class="heading--24 color--000">Acceso disponible desde el 10 de enero de 2025</p>
     <span class="space space--20"></span>
-    <p class="heading--24 color--000">Por favor, confirma tu asistencia, rellena el siguiente</p>
-    <p class="heading--24 color--000">formulario haciendo clic en el botón de abajo.</p>
+    <!-- <p class="heading--24 color--000">Por favor, confirma tu asistencia, rellena el siguiente</p> -->
+    <!-- <p class="heading--24 color--000">formulario haciendo clic en el botón de abajo.</p> -->
     <span class="space space--20"></span>
     <span class="space space--20"></span>
     <button type="button" class="button button--secondary button--center">COMING SOON</button>

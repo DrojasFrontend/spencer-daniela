@@ -464,9 +464,13 @@ body {
 		height: 100%;
 
 		&__img {
+			position: sticky;
+			top: 0;
+			left: 0;
 			width: 100%;
 			height: auto;
 			object-fit: cover;
+			z-index: -1;
 
 			&-negra {
 				position: absolute;
@@ -477,6 +481,7 @@ body {
 			}
 
 			@media only screen and (min-width: 1024px) {
+				position: relative;
 				height: 2800px;
 
 				&-negra {
@@ -491,7 +496,7 @@ body {
 			position: relative;
 			width: 100%;
 			height: 100%;
-			margin-top: -825px;
+			margin-top: -800px;
 			text-align: center;
 
 			@media only screen and (min-width: 1024px) {
@@ -517,6 +522,22 @@ body {
 
 			@media only screen and (min-width: 1024px) {
 				width: auto;
+			}
+		}
+
+		&__box {
+			position: relative;
+			width: calc(100% - 40px);
+			margin: 0 auto;
+			padding: 30px;
+			border-radius: 30px;
+			background-image: url(../../img/box.svg);
+			z-index: 1;
+
+			@media only screen and (min-width: 1024px) {
+				padding: 0;
+				border-radius: 0px;
+				background-image: none;
 			}
 		}
 
@@ -559,7 +580,7 @@ body {
 
 	&2 {
 		position: relative;
-		padding: 100px 0 0;
+		padding: 20px 0 0;
 		margin-top: 0px;
 		z-index: 1;
 
@@ -606,7 +627,7 @@ body {
 	&3 {
 		position: relative;
 		margin-top: -170px;
-		padding: 190px 0 200px;
+		padding: 190px 0 60px;
 		text-align: center;
 		background-image: url(../../img/img-3.webp);
 		background-size: cover;
@@ -644,9 +665,13 @@ body {
 		height: 100%;
 
 		&__img {
+			position: sticky;
+			top: 0;
+			left: 0;
 			width: 100%;
 			height: auto;
 			object-fit: cover;
+			z-index: -1;
 
 			&-top,
 			&-bottom {
@@ -689,7 +714,7 @@ body {
 			position: relative;
 			width: 100%;
 			height: 100%;
-			margin: -300px 0 40px;
+			margin: -500px 0 40px;
 			text-align: center;
 
 			@media only screen and (min-width: 1024px) {
@@ -764,6 +789,9 @@ body {
 		height: 100%;
 
 		&__img {
+			position: sticky;
+			top: 0;
+			left: 0;
 			width: 100%;
 			height: auto;
 			object-fit: cover;
@@ -789,7 +817,7 @@ body {
 			position: relative;
 			width: 100%;
 			height: 100%;
-			margin: -300px 0 40px;
+			margin: -300px 0 0;
 			text-align: center;
 
 			@media only screen and (min-width: 1024px) {
@@ -809,6 +837,7 @@ body {
 
 		.traslate {
 			font-family: inherit;
+			margin-top: 30px;
 			text-align: center;
 			font-size: 26px;
 			font-style: normal;
@@ -1046,9 +1075,22 @@ body {
 
 		.heading {
 			&--24 {
+				font-size: 24px;
 				letter-spacing: 4.8px;
 				@media only screen and (min-width: 1024px) {
+					font-size: 18px;
 					letter-spacing: 4.8px;
+				}
+			}
+
+			&--18 {
+				font-size: 18px;
+			}
+
+			&--12 {
+				font-size: 20px;
+				@media only screen and (min-width: 1024px) {
+					font-size: 12px;
 				}
 			}
 		}
@@ -1066,13 +1108,6 @@ body {
 			width: 100%;
 			height: 100vh;
 			object-fit: cover;
-
-			@media only screen and (min-width: 1024px) {
-				position: relative;
-				top: inherit;
-				left: inherit;
-				height: 2200px;
-			}
 		}
 
 		&__content {
@@ -1304,16 +1339,10 @@ body {
 		&__img {
 			position: fixed;
 			top: 0;
+			left: 0;
 			width: 100%;
 			height: 100vh;
 			object-fit: cover;
-
-			@media only screen and (min-width: 1024px) {
-				position: absolute;
-				top: -300px;
-				width: 100%;
-				height: auto;
-			}
 		}
 
 		&__content {
@@ -1331,7 +1360,10 @@ body {
 		}
 
 		.button {
-			min-width: 311px;
+			min-width: 100%;
+			@media only screen and (min-width: 1024px) {
+				min-width: 311px;
+			}
 		}
 
 		.box {

@@ -45,7 +45,9 @@
 
         <span class="space space--50"></span>
 
-        <p class="heading--76 color--836923 ls--10">SAVE <span class="font--blancha"><img class="" src="<?php echo IMG_BASE . 'the.svg'?>" alt=""></span> DATE</p>
-        <div class="section1__countdown" id="countdown-timer"></div>
+        <div class="section1__box">
+            <p class="heading--76 color--836923 ls--10">SAVE <span class="font--blancha"><img class="" src="<?php echo IMG_BASE . 'the.svg'?>" alt=""></span> DATE</p>
+            <div class="section1__countdown" id="countdown-timer"></div>
+        </div>
     </div>
 </section>

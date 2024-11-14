@@ -67,11 +67,11 @@ $places = [
           </div>
           <div class="text-traslate-en">
             <p class="heading--24 color--000">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor pariatur dignissimos provident molestias, deserunt eius iure harum, officia fugit sapiente velit consequuntur recusandae sunt, ipsam porro natus! Odit, animi delectus.
+              Estamos encantados de celebrar nuestra boda en Cartagena, la joya costera de Colombia. Esta ciudad, declarada Patrimonio de la Humanidad por la UNESCO, es uno de los tesoros culturales más importantes de Sudamérica. Las murallas de Cartagena de Indias adornan el centro histórico, conocido como “La Ciudad Amurallada", donde podrá descubrir plazas, calles adoquinadas y exquisitos y vibrantes edificios coloniales.
             </p>
             <span class="space space--20"></span>
             <p class="heading--24 color--000">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates mollitia blanditiis assumenda laudantium ad, ipsa eaque nesciunt! In beatae ab sunt porro, aspernatur, adipisci totam eum rerum magnam, ipsum hic!
+              La mejor forma de conocer Cartagena es paseando por ella, sumergiéndose en el laberinto de callejuelas y exuberantes plazas verdes. Recomendamos alojarse en la ciudad amurallada, donde todo está a un paso. Las calles están llenas de música en directo, espléndidos restaurantes y extravagantes bares, que contribuyen a la vibrante atmósfera de Cartagena.
             </p>
           </div>
         </div>

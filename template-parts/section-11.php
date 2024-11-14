@@ -20,9 +20,9 @@
 
         <a href="https://www.crateandbarrel.com/gift-registry/daniela-correa-munoz-and-spencer-rohlwing/r7190102" class="button button--primary button--center" target="_blank">CRATE AND BARREL</a>
         <span class="space space--20"></span>
-        <a href="https://www.williams-sonoma.com/registry/wkctz9w7vl/registry-list.html" class="button button--primary button--center" target="_blank">WILLIAMS SONOMA</a>
+        <a href="https://www.williams-sonoma.com/registry/wkctz9w7vl/registry-list.html?clickid=WmTUhSRZjxyKRLXVSZU7Kz58UkCT3AW1UUSj2Y0&irgwc=1&cm_cat=163410&cm_ven=afshoppromo&cm_ite=&cm_pla=ir&irpid=163410" class="button button--primary button--center" target="_blank">WILLIAMS SONOMA</a>
         <span class="space space--20"></span>
-        <a href="#" class="button button--primary button--center" target="_blank">HONEYMOON</a>
+        <a href="https://www.honeyfund.com/site/correa-munoz-rohlwing-05-25-2025?no_gdpr=1" class="button button--primary button--center" target="_blank">HONEYMOON</a>
       </div>
     </div>
 </section>

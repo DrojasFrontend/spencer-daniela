@@ -45,7 +45,7 @@
 </div> -->
 
 <!-- Header -->
-<header class="header <?php if(is_page('gift')) { ?>active<?php } ?>" data-header>
+<header class="header <?php if(is_page('gift') || is_page('story')) { ?>active<?php } ?>" data-header>
   <a href="/" class="header__menu-mobile">
     <img src="<?php echo IMG_BASE . 'logo.svg' ?>" class="header__logo" alt="" id="" />
   </a>
