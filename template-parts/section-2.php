@@ -13,7 +13,7 @@ $slides = [
     "img" => IMG_BASE . 'slick/slide-4.png',
   ],
   [
-    "img" => IMG_BASE . 'slick/slide-5.png',
+    "img" => IMG_BASE . 'slick/slide-5.webp',
   ],
   [
     "img" => IMG_BASE . 'slick/slide-6.png',
