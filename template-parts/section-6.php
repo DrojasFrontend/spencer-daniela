@@ -55,7 +55,7 @@ $places = [
         <span class="line line--small"></span>
         <span class="space space--20"></span>
         <span class="space space--10"></span>
-        <div class="text-traslate">
+        <div class="text-traslate" id="scroll-top">
           <div class="text-traslate-es">
             <p class="heading--24 color--000">
             We are thrilled to be hosting our wedding in Cartagena, Colombia's coastal gem. This city, designated as a UNESCO world heritage site, stands as one of South America's most significant cultural treasures. The walls of Cartagena de Indias grace the historical center, known as "the walled city," where you can discover squares, cobblestone streets, and exquisite, vibrant colonial buildings.

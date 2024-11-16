@@ -28,12 +28,21 @@ $(".accordion-link").click(function (e) {
   }
 });
 
-$("[data-traslate]").on("click", function() {
+$("[data-traslate]").on("click", function(e) {
+  e.preventDefault(); 
+  
   $(".text-traslate-es").toggleClass("active");
   $(".text-traslate-en").toggleClass("active");
+  
   if($(this).text() == 'Leer en Español') {
-    $(this).text("Read in English")
+    $(this).text("Read in English");
   } else {
-    $(this).text("Leer en Español")
+    $(this).text("Leer en Español");
   }
-})
+  
+  const targetId = $(this).attr('href') || '#scroll-top'; // Reemplaza 'tuID' con el ID al que quieres hacer scroll
+  
+  $('html, body').animate({
+    scrollTop: $(targetId).offset().top - 100
+  }, 200);
+});

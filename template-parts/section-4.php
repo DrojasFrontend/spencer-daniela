@@ -1,6 +1,6 @@
 <section class="section4" id="events">
     <img class="section4__img desktop" src="<?php echo IMG_BASE . 'img-4.webp'?>" alt="">
-    <img class="section4__img mobile" src="<?php echo IMG_BASE . 'img-1-mobile.webp'?>" alt="">
+    <img class="section4__img mobile" src="<?php echo IMG_BASE . 'img-4-mobile.png'?>" alt="">
     <img class="section4__img-top" src="<?php echo IMG_BASE . 'img-7.png'?>" alt="">
     <img class="section4__img-bottom" src="<?php echo IMG_BASE . 'img-8.png'?>" alt="">
     <div class="section4__content">
