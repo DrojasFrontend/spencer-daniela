@@ -12,7 +12,7 @@ $places = [
             "address" => "Cra. 1 # 12 - 118",
             "city" => "Cartagena, Colombia",
             "phone" => "+57 (605) 6941234",
-            "link" => "https://www.hyatt.com/hyatt-regency/es-ES/ctgrc-hyatt-regency-cartagena",
+            "link" => "https://go.hyatt.com/link/v2/eae__GKM5JBXpUGUPAuOwJCzfpC-lL3kAXMEy",
             "image" => IMG_BASE . 'places-cartagena/hoteles-14.webp',
         ],
         [
@@ -619,9 +619,9 @@ $places = [
         
                             <?php if ($place['link']) : ?>
                                 <a class="button button--small" href="<?php echo $place['link']; ?>" target="_blank">
-                                VIEW
+                                    <?php echo ($place['name'] === 'Hyatt Regency Hotel') ? 'INFO DCTO.' : 'VIEW'; ?>
                                 </a>
-                            <?php endif?>
+                            <?php endif; ?>
                             </div>
                         </div>
                     </div>

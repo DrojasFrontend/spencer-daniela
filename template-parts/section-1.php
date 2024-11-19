@@ -40,7 +40,7 @@
             <p class="heading--32 color--836923">GIFT LIST</p>
             <p class="heading--20 color--836923">LISTA DE REGALOS</p>
             <span class="space space--20"></span>
-            <a href="/gift" type="button" class="button button--primary button--center">REGISTER</a>
+            <a href="/gift" type="button" class="button button--primary button--center">REGISTRY</a>
         </div>
 
         <span class="space space--50"></span>
