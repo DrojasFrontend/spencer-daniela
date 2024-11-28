@@ -1307,6 +1307,18 @@ body {
 			.button--primary {
 				max-width: 145px;
 			}
+
+			&-top {
+				max-width: 1160px;
+				margin: 0 auto;
+				padding: 20px;
+				background-color: var(--FFF);
+				filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
+
+				@media only screen and (min-width: 1024px) {
+					padding: 41px 62px 41px 36px;
+				}
+			}
 		}
 
 		&__icon {

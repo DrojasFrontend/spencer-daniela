@@ -1,6 +1,12 @@
 <?php 
 $places = [
   [
+    "id" => "info",
+    "title-en" => "TRAVEL INFO",
+    "title-es" => "INFORMACIÓN DE VIAJE",
+    "img" => IMG_BASE . 'icon-info.svg',
+  ],
+  [
     "id" => "hoteles",
     "title-en" => "HOTELS",
     "title-es" => "HOTELES",

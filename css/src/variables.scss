@@ -447,7 +447,11 @@
 
 .spacing {
 	&--1 {
-		letter-spacing: 1px;
+		letter-spacing: 1.1px;
+	}
+
+	&--24 {
+		letter-spacing: 2.4px;
 	}
 
 	&--5 {

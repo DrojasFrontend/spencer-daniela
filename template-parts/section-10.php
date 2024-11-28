@@ -8,7 +8,7 @@ $places = [
     "img" => IMG_BASE . 'icon-hotels.svg',
     "places" => [
         [
-            "name" => "Hyatt Regency Hotel",
+            "name" => "Hyatt Regency Hotel <br> <span style='text-transform: none'>Hotel recomendado</span>",
             "address" => "Cra. 1 # 12 - 118",
             "city" => "Cartagena, Colombia",
             "phone" => "+57 (605) 6941234",
@@ -577,6 +577,36 @@ $places = [
         <span class="space space--50 desktop"></span>
         <span class="space space--50 desktop"></span>
 
+        <div class="sectionCartagena__slick" id="info">
+            <div class="sectionCartagena__wrapper">
+                <div class="sectionCartagena__icon">
+                    <img src="<?php echo IMG_BASE . 'icon-info.svg';?>" alt="">
+                    <div>
+                        <h2 class="heading--48 color--836923 uppercase">Travel Info</h2>
+                        <p class="heading--32 color--836923 uppercase">INFORMACIÓN DE VIAJE</p>
+                    </div>
+                </div>
+                <div class="sectionCartagena__info-top">
+                    <h3 class="heading--24 color--836923 spacing--24 uppercase">Passports</h3>
+                    <span class="space space--10"></span>
+                    <p class="heading--20 color--4F4F4F spacing--1">Don't forget your passports! Please double check the expiration date.</p>
+                    <span class="space space--40"></span>
+                    <h3 class="heading--24 color--836923 spacing--24 uppercase">CheckMig</h3>
+                    <span class="space space--10"></span>
+                    <p class="heading--20 color--4F4F4F spacing--1">Please complete the immigration registration form 48 hours before your trip, as the airline requires proof of completion to check-in. Complete the same step to return to the US. <a href="https://apps.migracioncolombia.gov.co/pre-registro/en" target="_blank">Click Here</a></p>
+                        <span class="space space--40"></span>
+                    <h3 class="heading--24 color--836923 spacing--24 uppercase">RAFAEL NUÑEZ - INTERNATIONAL AIRPORT</h3>
+                    <span class="space space--10"></span>
+                    <p class="heading--20 color--4F4F4F spacing--1">Flight to Cartagena on the Caribbean coast.  Latam, Delta, American Airlines, United, Copa Airlines  and Avianca operate direct flights to the Rafael Nuñez Airport. The airport is a short 10-minutes taxi journey to the old town. There are authorized taxi services 24 hours. The rate to Getsemaní costs about $14.000 cop. To the hotel zone of the Historic Center (Ciudad Amurallada) about $14.000 cop and to the Bocagrande zone it costs $20.000 cop. Normally $1 USD is equivalent to $4.500 cop.</p>
+                    <span class="space space--40"></span>
+                    <h3 class="heading--24 color--836923 spacing--24 uppercase">SECURITY IN CARTAGENA</h3>
+                    <span class="space space--10"></span>
+                    <p class="heading--20 color--4F4F4F spacing--1">Cartagena is a beautiful and safe destination for our celebration. The city is known for its welcoming atmosphere, and we want you to feel at ease as you join us for this special occasion. With a strong focus on tourism and hospitality, Cartagena offers a secure environment for all visitors. From the historic streets to the scenic beaches, we’re excited to share this incredible city with you, and we’re confident you'll feel right at home!</p>
+                </div>
+            </div>
+        </div>
+
+
         <?php foreach ($places as $category) { ?>
         <div class="sectionCartagena__slick" id="<?php echo $category['id']; ?>">
             <!-- <div class="bckg"></div> -->
@@ -619,7 +649,7 @@ $places = [
         
                             <?php if ($place['link']) : ?>
                                 <a class="button button--small" href="<?php echo $place['link']; ?>" target="_blank">
-                                    <?php echo ($place['name'] === 'Hyatt Regency Hotel') ? 'INFO DCTO.' : 'VIEW'; ?>
+                                    <?php echo (str_contains(strip_tags($place['name']), 'Hyatt Regency Hotel')) ? 'Discount code' : 'VIEW'; ?>
                                 </a>
                             <?php endif; ?>
                             </div>
