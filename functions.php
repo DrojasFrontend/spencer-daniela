@@ -66,7 +66,7 @@ function send_rsvp_email() {
         // Verificar reCAPTCHA
         $recaptcha_verify = wp_remote_post('https://www.google.com/recaptcha/api/siteverify', [
             'body' => [
-                'secret' => '6Lc3xoEqAAAAAKWyBlu1e3kRLsdpE21JQwDtY5am',
+                'secret' => '6Lf-UdIqAAAAAEODRK41ycVHN4DBgFeAA-XQaevb',
                 'response' => sanitize_text_field($_POST['recaptcha_response'])
             ]
         ]);
