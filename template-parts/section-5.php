@@ -16,7 +16,8 @@
     <!-- <p class="heading--24 color--000">formulario haciendo clic en el botón de abajo.</p> -->
     <span class="space space--20"></span>
     <span class="space space--20"></span>
-    <button type="button" class="button button--secondary button--center">COMING SOON</button>
+    <!-- <button type="button" class="button button--secondary button--center">COMING SOON</button> -->
+    <button id="openRSVP" type="button" class="button button--secondary button--center">R.S.V.P.</button>
     <span class="space space--20"></span>
     <span class="space space--20"></span>
     <p class="heading--20 color--836923">MORE INFORMATION / MÁS INFORMACIÓN</p>

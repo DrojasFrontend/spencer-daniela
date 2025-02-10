@@ -38,6 +38,8 @@ get_header();
     <?php get_template_part('template-parts/section', '8'); ?>
     <!-- SECTION 8 -->
 
+    <?php get_template_part('template-parts/section', 'rsvp'); ?>
+
   </main>
 
 <?php 
