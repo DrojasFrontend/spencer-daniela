@@ -220,14 +220,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		searchResults.innerHTML = filtered
 			.map(
 				(inv) => `
-					<div class="rsvpModal__result" onclick='selectInvitado("${inv.nombre}", ${
-					inv.eventos
-				}, ${JSON.stringify(inv.acompanantes).replace(/'/g, "&apos;")})'">
-							${inv.nombre} ${
-					inv.acompanantes.length > 0 ? `(+${inv.acompanantes.length})` : ""
-				}
-					</div>
-			`
+            <div class="rsvpModal__result" onclick='selectInvitado("${
+							inv.nombre
+						}", ${inv.eventos}, ${JSON.stringify(inv.acompanantes).replace(
+					/'/g,
+					"&apos;"
+				)})'">
+            ${inv.nombre}
+            </div>
+        `
 			)
 			.join("");
 	});
