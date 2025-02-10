@@ -113,7 +113,7 @@
         </div>
 
         <!-- Step 5: Thanks -->
-        <div id="step5" class="rsvpModal__step">
+        <div id="step6" class="rsvpModal__step">
             <h2 class="heading--64 color--836923">Thanks</h3>
             <p class="heading--14 color--4F4F4F">GRACIAS</p>
             <p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
@@ -125,7 +125,7 @@
             Te enviaremos una copia del RSVP a tu correo electrónico.
             </p>
 
-            <a class="button button--secondary" href="/">BACK TO HOME</a>
+            <a class="button button--secondary" style="font-family: 'Poppins', serif;margin-top: 20px;font-size: 18px;" href="/">BACK TO HOME</a>
         </div>
     </div>
 </div>
