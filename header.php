@@ -36,7 +36,7 @@
   <!-- wordpress header includes -->
   <?php wp_head(); ?>
 
-  <script src="https://www.google.com/recaptcha/api.js?render=6Lc3xoEqAAAAAAkqDAnEarsqXf-6HKCC2G4jogWh"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6Lf-UdIqAAAAAMUnAwZ3LO0lInGTx667TNOqGkEA"></script>
 
 </head>
 <body <?php body_class(); ?>>

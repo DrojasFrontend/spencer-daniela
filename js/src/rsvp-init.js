@@ -353,7 +353,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			grecaptcha.ready(function () {
 				startLoading();
 				grecaptcha
-					.execute("6Lc3xoEqAAAAAAkqDAnEarsqXf-6HKCC2G4jogWh", {
+					.execute("6Lf-UdIqAAAAAMUnAwZ3LO0lInGTx667TNOqGkEA", {
 						action: "rsvp",
 					})
 					.then(function (token) {
