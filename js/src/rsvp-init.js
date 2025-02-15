@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		switch (step) {
 			case 2:
 				stepElement.innerHTML = `
-									<h2 class="heading--32 uppercase color--836923">Wedding</h2>
+									<h2 class="heading--32 uppercase color--836923">WEDDING</h2>
 									<p class="heading--24 uppercase color--4F4F4F">NUESTRA BODA</p>
 									<span class="space space--30"></span>
 									<p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
@@ -111,11 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
 							<h2 class="heading--32 color--836923">Which menu do you prefer?</h2>
 							<p class="heading--24 color--4F4F4F">¿Qué Menú prefieres?</p>
 							<span class="space space--20"></span>
-							<p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
-									October 12th, 2025 / 12 de Octubre 2025
-									Hacienda San José, Pereira - Colombia
-									3:30 P.M.
-							</p>
 							<span class="space space--20"></span>
 							<div class="guest-responses-container"></div>
 							<div class="navigation-buttons">
@@ -157,8 +152,15 @@ document.addEventListener("DOMContentLoaded", function () {
 												<p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
 														May 23th, 2025 / 23 de Mayo 2025 <br>
 														El Mirador Gastro Bar, <br>
-														Cartagena, Colombia <br>
 														5:00 - 7:00 P.M.
+												</p>
+												<span class="space space--20"></span>
+												<p style="color: #A07F2B">
+												We are delighted to offer an open bar from 5 to 7 pm. After this time, guests are welcome to continue enjoying beverages at their own expense.
+												</p>
+												<span class="space space--20"></span>
+												<p style="color: #A07F2B">
+												Durante este evento ofrecemos 2 horas de Open Bar de 5 a 7pm. El costo del consumo que tengan en adelante debe asumirlo cada invitado.
 												</p>
 												<span class="space space--20"></span>
 												<div class="guest-responses-container"></div>
@@ -196,6 +198,13 @@ document.addEventListener("DOMContentLoaded", function () {
 									May 24th, 2025 / 24 de Mayo 2025 <br>
 									Makani Beach Club<br>
 									9:00 A.M.
+							</p>
+							<span class="space space--20"></span>
+							<p style="color:#A07F2B">
+                For this event, we are pleased to offer a welcome cocktail with lunch and snacks. Additional beverages, such as cocktails, soft drinks, and spirits, will be at each guest's own expense.</p>
+								<span class="space space--10"></span>
+							<p style="color:#A07F2B">
+								Para este evento les ofrecemos un coctel de bienvenida, almuerzo y snacks. Las  bebidas adicionales como cocteles, refrescos y tragos, deben ser asumidas por cada invitado.
 							</p>
 							<span class="space space--20"></span>
 							<div class="guest-responses-container"></div>

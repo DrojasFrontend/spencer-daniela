@@ -1401,7 +1401,7 @@ body {
   display: block;
   text-align: center;
   color: var(--000);
-  font-size: 14px;
+  font-size: 18px;
 }
 @media only screen and (min-width: 1024px) {
   .section1__countdown div span {
@@ -2326,7 +2326,7 @@ select,
   [type=number],
   select,
   [type=date] {
-    font-size: 14px;
+    font-size: 18px;
     height: 60px;
   }
 }
@@ -2339,7 +2339,7 @@ select::-webkit-input-placeholder,
   /* Chrome/Opera/Safari */
   font-family: var(--font-dating);
   color: var(--000);
-  font-size: 10px;
+  font-size: 18px;
   font-weight: 500;
 }
 @media only screen and (min-width: 1024px) {
@@ -2349,7 +2349,7 @@ select::-webkit-input-placeholder,
   [type=number]::-webkit-input-placeholder,
   select::-webkit-input-placeholder,
   [type=date]::-webkit-input-placeholder {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 [type=text]::-moz-placeholder,
@@ -2361,7 +2361,7 @@ select::-moz-placeholder,
   /* Firefox 19+ */
   font-family: var(--font-dating);
   color: var(--000);
-  font-size: 10px;
+  font-size: 18px;
   font-weight: 500;
 }
 @media only screen and (min-width: 1024px) {
@@ -2371,7 +2371,7 @@ select::-moz-placeholder,
   [type=number]::-moz-placeholder,
   select::-moz-placeholder,
   [type=date]::-moz-placeholder {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 [type=text]:-ms-input-placeholder,
@@ -2383,7 +2383,7 @@ select:-ms-input-placeholder,
   /* IE 10+ */
   font-family: var(--font-dating);
   color: var(--000);
-  font-size: 10px;
+  font-size: 18px;
   font-weight: 500;
 }
 @media only screen and (min-width: 1024px) {
@@ -2393,7 +2393,7 @@ select:-ms-input-placeholder,
   [type=number]:-ms-input-placeholder,
   select:-ms-input-placeholder,
   [type=date]:-ms-input-placeholder {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 [type=text]:-moz-placeholder,
@@ -2404,7 +2404,7 @@ select:-moz-placeholder,
 [type=date]:-moz-placeholder {
   font-family: var(--font-dating);
   color: var(--000);
-  font-size: 10px;
+  font-size: 18px;
   font-weight: 500;
 }
 @media only screen and (min-width: 1024px) {
@@ -2414,7 +2414,7 @@ select:-moz-placeholder,
   [type=number]:-moz-placeholder,
   select:-moz-placeholder,
   [type=date]:-moz-placeholder {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -2468,7 +2468,7 @@ textarea {
 @media only screen and (min-width: 1024px) {
   .form-group__item label,
   .form-group__full label {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -2597,7 +2597,7 @@ input[type=radio]:checked + span:before {
 .group-form label {
   color: var(--4f4f4f);
   font-family: var(--font-dating);
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -2776,6 +2776,9 @@ input[type=radio]:checked + span:before {
 .rsvpModal__step .button {
   font-size: 14px;
   height: 40px;
+}
+.rsvpModal__step label {
+  font-size: 18px;
 }
 
 .rsvpModal__step--active {

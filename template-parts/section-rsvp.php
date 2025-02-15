@@ -11,27 +11,28 @@
         </div>
         <!-- Step 1: Search -->
         <div id="step1" class="rsvpModal__step rsvpModal__step--active">
-            <h2 class="heading--32 uppercase color--836923">Daniela & Spencer</h2>
-            <p class="heading--24 uppercase color--4F4F4F">WEDDING RSVP</p>
+            <h2 class="heading--32 uppercase color--836923">DANIELA & SPENCER</h2>
+            <p class="heading--24 uppercase color--4F4F4F">WEDDING</p>
             <span class="space space--30"></span>
             <p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
-                Please enter below your First Name <br> and your Last Name, all in capitals.
+            If you’re responding for you and a guest (or your family), you’ll be able to RSVP
+            for your entire group. Please enter below your First Name and your Last Name.
             </p>
             <span class="space space--30 "></span>
             <label for="" class="heading--16 color--000" style="font-family: 'Poppins', serif; ">Full Name</label>
-            <input type="text" id="searchInput" placeholder="Full Name">
+            <input type="text" id="searchInput" placeholder="FIND YOUR INVITATION">
             <div id="searchResults"></div>
         </div>
 
         <!-- Step 2: Wedding -->
         <div id="step2" class="rsvpModal__step">
             <h2 class="heading--32 uppercase color--836923">Wedding</h3>
-            <p class="heading--24 uppercase color--4F4F4F">NUESTRO MATRIMONIO</p>
+            <p class="heading--24 uppercase color--4F4F4F">NUESTRA BODA</p>
             <span class="space space--20"></span>
             <p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
-            October 12th, 2025 / 12 de Octubre 2025
-            Hacienda San José, Pereira - Colombia
-            3:30 P.M.
+            May 25th, 2025 / 25 de Mayo 2025
+            Sofitel Legend Santa Clara
+            5:00 P.M.
             </p>
             <span class="space space--20"></span>
             <div class="guest-response">
@@ -51,11 +52,6 @@
             <h2 class="heading--32 color--836923">Which menu do you prefer?</h2>
             <p class="heading--24 color--4F4F4F">¿Qué Menú prefieres?</p>
             <span class="space space--20"></span>
-            <p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
-                October 12th, 2025 / 12 de Octubre 2025
-                Hacienda San José, Pereira - Colombia
-                3:30 P.M.
-            </p>
             <span class="space space--20"></span>
             <div class="guest-response">
                 <p>Name Guest 1</p>
@@ -77,13 +73,21 @@
 
         <!-- Step 4: Cocktail -->
         <div id="step4" class="rsvpModal__step">
-            <h2 class="heading--32 uppercase color--836923">Welcome Cocktail</h3>
-            <p class="heading--24 uppercase color--4F4F4F">COCTEL DE BIENVENIDA</p>
+            <h2 class="heading--32 uppercase color--836923">COCKTAIL HOUR</h3>
+            <p class="heading--24 uppercase color--4F4F4F">HORA DE CÓCTEL</p>
             <span class="space space--20"></span>
             <p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
-                October 11th, 2025 / 11 de Octubre 2025 <br>
-                Hacienda Gavilanes <br>
-                4:00 P.M.
+                May 23th, 2025 / 23 de Mayo 2025 <br>
+                El Mirador Gastro Bar <br>
+                5:00 - 7:00 P.M.
+            </p>
+            <span class="space space--20"></span>
+            <p style="color: #A07F2B">
+            We are delighted to offer an open bar from 5 to 7 pm. After this time, guests are welcome to continue enjoying beverages at their own expense.
+            </p>
+            <span class="space space--20"></span>
+            <p style="color: #A07F2B">
+            Durante este evento ofrecemos 2 horas de Open Bar de 5 a 7pm. El costo del consumo que tengan en adelante debe asumirlo cada invitado.
             </p>
             <span class="space space--30"></span>
             <div class="guest-response">
@@ -102,13 +106,20 @@
 
         <!-- Step 5: Cocktail -->
         <div id="step5" class="rsvpModal__step">
-            <h2 class="heading--32 uppercase color--836923">Beach Day Makani</h3>
+            <h2 class="heading--32 uppercase color--836923">BEACH DAY MAKANI</h3>
             <p class="heading--24 uppercase color--4F4F4F">DÍA DE PLAYA MAKANI</p>
             <span class="space space--20"></span>
             <p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
-                May 24th, 2025 / 24 de Mayo 2025 <br>
-                Makani Beach Club <br>
-                9:00 P.M.
+            May 24th, 2025 / 24 de Mayo 2025 <br>
+            Makani Beach Club <br>
+            9:00 A.M.
+            </p>
+            <span class="space space--20"></span>
+            <p style="color:#A07F2B">
+                For this event, we are pleased to offer a welcome cocktail with lunch and snacks. Additional beverages, such as cocktails, soft drinks, and spirits, will be at each guest's own expense.</p>
+            <span class="space space--10"></span>
+            <p style="color:#A07F2B">
+            Para este evento les ofrecemos un coctel de bienvenida, almuerzo y snacks. Las  bebidas adicionales como cocteles, refrescos y tragos, deben ser asumidas por cada invitado.
             </p>
             <span class="space space--30"></span>
             <div class="guest-response">
@@ -135,7 +146,9 @@
             <span class="space space--10"></span>
             <input type="email" id="email">
             <span class="space space--10"></span>
-            <label for="" class="heading--16 color--000" style="font-family: 'Poppins', serif; ">Share sound you would like play at reception? <br> Comparte una canción que quieras agregar al playlist de la fiesta?</label>
+            <label for="" class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
+                What song would you like to hear play at the reception? <br> ¿Qué canción te gustaría agregar a la playlist de la fiesta?
+            </label>
             <span class="space space--10"></span>
             <input type="text" id="play">
             <span class="space space--10"></span>
