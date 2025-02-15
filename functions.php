@@ -92,6 +92,7 @@ function send_rsvp_email() {
             <tr style='background: #f0f0f0;'>
                 <th style='padding: 10px; border: 1px solid #ddd; text-align: left;'>Guest</th>
                 <th style='padding: 10px; border: 1px solid #ddd; text-align: left;'>Wedding</th>
+                <th style='padding: 10px; border: 1px solid #ddd; text-align: left;'>Menu Selection</th>
                 <th style='padding: 10px; border: 1px solid #ddd; text-align: left;'>Cocktail</th>
                 <th style='padding: 10px; border: 1px solid #ddd; text-align: left;'>Beach Day</th>
             </tr>";
@@ -100,6 +101,7 @@ function send_rsvp_email() {
             $guests_table .= "<tr>
                 <td style='padding: 10px; border: 1px solid #ddd;'>{$invitado['nombre']}</td>
                 <td style='padding: 10px; border: 1px solid #ddd;'>" . (isset($invitado['wedding']) ? ($invitado['wedding'] ? 'Confirmed' : 'Declined') : 'N/A') . "</td>
+                <td style='padding: 10px; border: 1px solid #ddd;'>{$menu_selection}</td>
                 <td style='padding: 10px; border: 1px solid #ddd;'>" . (isset($invitado['cocktail']) ? ($invitado['cocktail'] ? 'Confirmed' : 'Declined') : 'N/A') . "</td>
                 <td style='padding: 10px; border: 1px solid #ddd;'>" . (isset($invitado['beach']) ? ($invitado['beach'] ? 'Confirmed' : 'Declined') : 'N/A') . "</td>
             </tr>";
@@ -138,6 +140,11 @@ function send_rsvp_email() {
                 May 25th, 2025<br>
                 5:00 P.M.<br>
                 Sofitel Legend Santa Clara</p>";
+            }
+
+            if (isset($invitado['menu']) && $invitado['menu']) {
+                $menu_text = ucfirst($invitado['menu']);
+                $confirmed_events .= "<p><strong>Menu Selection:</strong> {$menu_text}</p>";
             }
             
             if (isset($invitado['cocktail']) && $invitado['cocktail']) {
