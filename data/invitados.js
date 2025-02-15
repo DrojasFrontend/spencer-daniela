@@ -165,7 +165,7 @@ const invitados = [
 		nombre: "Christian Reyes",
 		eventos: 3,
 		confirmado: false,
-		acompanantes: ["Adriana Reyes"],
+		acompanantes: ["Adriana Reyes", "Sophia Reyes", "Sarah Reyes "],
 	},
 	{
 		nombre: "Amparo Villegas",
@@ -255,7 +255,7 @@ const invitados = [
 		nombre: "Tyler Ginger",
 		eventos: 3,
 		confirmado: false,
-		acompanantes: ["Sydney Ginger"],
+		acompanantes: ["Sydney Ginger", "Wren Ginger"],
 	},
 	{
 		nombre: "Luke Rohlwing",
@@ -339,25 +339,25 @@ const invitados = [
 		nombre: "Mandy Lowe",
 		eventos: 3,
 		confirmado: false,
-		acompanantes: ["Jeremy Lowe"],
+		acompanantes: ["Jeremy Lowe", "Rachel Lowe", "Zach Lowe", "Matthew Lowe"],
 	},
 	{
 		nombre: "Lisa Marchetti",
 		eventos: 3,
 		confirmado: false,
-		acompanantes: ["Alex Marchetti"],
+		acompanantes: ["Alex Marchetti", "Salvatore Marchetti "],
 	},
 	{
 		nombre: "Jeff Rohlwing",
 		eventos: 3,
 		confirmado: false,
-		acompanantes: ["Jenn Rohlwing"],
+		acompanantes: ["Jenn Rohlwing", "Thea Rohlwing", "Solenne Rohlwing", "Linnea Rohlwing"],
 	},
 	{
 		nombre: "Sarah Martinez",
 		eventos: 3,
 		confirmado: false,
-		acompanantes: ["Chris Martinez"],
+		acompanantes: ["Chris Martinez", "Jordan Martinez", "Andrew Martinez", "MJ Martinez"],
 	},
 	{
 		nombre: "Avery Martinez",
