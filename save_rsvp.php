@@ -30,6 +30,11 @@ foreach ($data['invitados'] as $invitado) {
         $message .= "- Boda: " . ($invitado['wedding'] ? 'Asistirá' : 'No asistirá') . "\n";
     }
     
+    // Menu
+    if (isset($invitado['menu']) && $invitado['menu']) {
+        $message .= "- Menú seleccionado: " . $invitado['menu'] . "\n";
+    }
+    
     // Cocktail
     if (isset($invitado['cocktail'])) {
         $message .= "- Cocktail: " . ($invitado['cocktail'] ? 'Asistirá' : 'No asistirá') . "\n";

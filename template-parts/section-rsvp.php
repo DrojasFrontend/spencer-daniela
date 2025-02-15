@@ -11,8 +11,8 @@
         </div>
         <!-- Step 1: Search -->
         <div id="step1" class="rsvpModal__step rsvpModal__step--active">
-            <h2 class="heading--64 color--836923">Daniela & Spencer</h2>
-            <p class="heading--14 color--4F4F4F">WEDDING RSVP</p>
+            <h2 class="heading--32 uppercase color--836923">Daniela & Spencer</h2>
+            <p class="heading--24 uppercase color--4F4F4F">WEDDING RSVP</p>
             <span class="space space--30"></span>
             <p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
                 Please enter below your First Name <br> and your Last Name, all in capitals.
@@ -25,8 +25,8 @@
 
         <!-- Step 2: Wedding -->
         <div id="step2" class="rsvpModal__step">
-            <h2 class="heading--64 color--836923">Wedding</h3>
-            <p class="heading--14 color--4F4F4F">NUESTRO MATRIMONIO</p>
+            <h2 class="heading--32 uppercase color--836923">Wedding</h3>
+            <p class="heading--24 uppercase color--4F4F4F">NUESTRO MATRIMONIO</p>
             <span class="space space--20"></span>
             <p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
             October 12th, 2025 / 12 de Octubre 2025
@@ -46,10 +46,39 @@
             <button class="button button--secondary" onclick="nextStep(3)">Continue</button>
         </div>
 
-        <!-- Step 3: Cocktail -->
+        <!-- Step 3: Wedding -->
         <div id="step3" class="rsvpModal__step">
-            <h2 class="heading--64 color--836923">Welcome Cocktail</h3>
-            <p class="heading--14 color--4F4F4F">COCTEL DE BIENVENIDA</p>
+            <h2 class="heading--32 color--836923">Which menu do you prefer?</h2>
+            <p class="heading--24 color--4F4F4F">¿Qué Menú prefieres?</p>
+            <span class="space space--20"></span>
+            <p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
+                October 12th, 2025 / 12 de Octubre 2025
+                Hacienda San José, Pereira - Colombia
+                3:30 P.M.
+            </p>
+            <span class="space space--20"></span>
+            <div class="guest-response">
+                <p>Name Guest 1</p>
+                <div>
+                    <select class="select--small" onchange="handleMenuChoice(this.value)">
+                        <option value="">Select an option</option>
+                        <option value="true">Beef / Carne de Res</option>
+                        <option value="true">Fish / Pescado</option>
+                        <option value="true">Vegetarian / Vegetariano</option>
+                    </select>
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <button class="button button--secondary" onclick="prevStep(2)">Back</button>
+                <span class="space space--10"></span>
+                <button class="button button--secondary" onclick="nextStep(4)">Continue</button>
+            </div>
+        </div>
+
+        <!-- Step 4: Cocktail -->
+        <div id="step4" class="rsvpModal__step">
+            <h2 class="heading--32 uppercase color--836923">Welcome Cocktail</h3>
+            <p class="heading--24 uppercase color--4F4F4F">COCTEL DE BIENVENIDA</p>
             <span class="space space--20"></span>
             <p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
                 October 11th, 2025 / 11 de Octubre 2025 <br>
@@ -64,15 +93,15 @@
                     <button class="button button--small" onclick="declineCocktail()">Decline</button>
                 </div>
             </div>
-            <button class="button button--secondary" onclick="prevStep(2)">Back</button>
+            <button class="button button--secondary" onclick="prevStep(3)">Back</button>
             <span class="space space--10"></span>
-            <button class="button button--secondary" onclick="nextStep(4)">Continue</button>
+            <button class="button button--secondary" onclick="nextStep(5)">Continue</button>
         </div>
 
-        <!-- Step 4: Cocktail -->
-        <div id="step4" class="rsvpModal__step">
-            <h2 class="heading--64 color--836923">Beach Day Makani</h3>
-            <p class="heading--14 color--4F4F4F">DÍA DE PLAYA MAKANI</p>
+        <!-- Step 5: Cocktail -->
+        <div id="step5" class="rsvpModal__step">
+            <h2 class="heading--32 uppercase color--836923">Beach Day Makani</h3>
+            <p class="heading--24 uppercase color--4F4F4F">DÍA DE PLAYA MAKANI</p>
             <span class="space space--20"></span>
             <p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
                 May 24th, 2025 / 24 de Mayo 2025 <br>
@@ -87,15 +116,15 @@
                     <button class="button button--small" onclick="declineCocktail()">Decline</button>
                 </div>
             </div>
-            <button class="button button--secondary" onclick="prevStep(3)">Back</button>
+            <button class="button button--secondary" onclick="prevStep(4)">Back</button>
             <span class="space space--10"></span>
-            <button class="button button--secondary" onclick="nextStep(5)">Continue</button>
+            <button class="button button--secondary" onclick="nextStep(6)">Continue</button>
         </div>
 
-        <!-- Step 5: Additional Info -->
-        <div id="step5" class="rsvpModal__step">
-            <h2 class="heading--64 color--836923">Additional Info</h3>
-            <p class="heading--14 color--4F4F4F">INFORMACIÓN ADICIONAL</p>
+        <!-- Step 6: Additional Info -->
+        <div id="step6" class="rsvpModal__step">
+            <h2 class="heading--32 uppercase color--836923">Additional Info</h3>
+            <p class="heading--24 uppercase color--4F4F4F">INFORMACIÓN ADICIONAL</p>
             <span class="space space--20"></span>
             <label for="" class="heading--16 color--000" style="font-family: 'Poppins', serif; ">Phone / Teléfono</label>
             <input type="text" id="phone">
@@ -110,15 +139,15 @@
             <textarea id="restrictions"></textarea>
             <span class="space space--10"></span>
             <div class="navigation-buttons">
-            <button class="button button--secondary" onclick="prevStep(4)">Back</button>
+            <button class="button button--secondary" onclick="prevStep(5)">Back</button>
             <button class="button button--secondary" onclick="submitRSVP()">R.S.V.P.</button>
             </div>
         </div>
 
-        <!-- Step 5: Thanks -->
-        <div id="step6" class="rsvpModal__step">
-            <h2 class="heading--64 color--836923">Thanks</h3>
-            <p class="heading--14 color--4F4F4F">GRACIAS</p>
+        <!-- Step 7: Thanks -->
+        <div id="step7" class="rsvpModal__step">
+            <h2 class="heading--32 uppercase color--836923">Thanks</h3>
+            <p class="heading--24 uppercase color--4F4F4F">GRACIAS</p>
             <p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
                 Thank you for confirming your attendance to our wedding. We are very happy to share this special day with you. We will send a copy of your RSVP to your email.
             </p>

@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		invitados: [], // Array para almacenar las respuestas de todos los invitados
 		phone: "",
 		email: "",
+		play: "",
 		restrictions: "",
 		numEvents: 0,
 	};
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const searchResults = document.getElementById("searchResults");
 	const modal = document.getElementById("rsvpModal");
 	const progressBar = document.querySelector(".rsvpModal__progress-bar");
-	const totalSteps = 6;
+	const totalSteps = 7;
 
 	// =========================================
 	// Funciones de utilidad
@@ -47,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		formData.invitados = [];
 		formData.phone = "";
 		formData.email = "";
+		formData.play = "";
 		formData.restrictions = "";
 		formData.numEvents = 0;
 
@@ -70,11 +72,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		switch (step) {
 			case 2:
 				stepElement.innerHTML = `
-									<h2 class="heading--64 color--836923">Wedding</h2>
-									<p class="heading--14 color--4F4F4F">NUESTRO MATRIMONIO</p>
+									<h2 class="heading--32 uppercase color--836923">Wedding</h2>
+									<p class="heading--24 uppercase color--4F4F4F">NUESTRA BODA</p>
 									<span class="space space--30"></span>
 									<p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
-											May 25th / Mayo 25, 2025 <br>
+											May 25th, 2025 / 25 de Mayo 2025 <br>
 											Sofitel Legend Santa Clara<br>
 											5:00 P.M.
 									</p>
@@ -83,9 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
 									<div class="navigation-buttons">
 											<button class="button button--secondary" onclick="prevStep(1)">Back</button>
 											<span class="space space--10"></span>
-											<button class="button button--secondary" onclick="nextStep(${
-												formData.numEvents === 2 ? 3 : 4
-											})">Continue</button>
+											<button class="button button--secondary" onclick="prevStep(3)">Continue</button>
 									</div>
 							`;
 
@@ -109,15 +109,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			case 3:
 				if (formData.numEvents === 2) {
 					stepElement.innerHTML = `
-											<h2 class="heading--64 color--836923">Welcome Cocktail</h2>
-											<p class="heading--14 color--4F4F4F">COCTEL DE BIENVENIDA</p>
+											<h2 class="heading--32 color--836923">Which menu do you prefer?</h2>
+											<p class="heading--24 color--4F4F4F">¿Qué Menú prefieres?</p>
 											<span class="space space--20"></span>
-											<p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
-													May 23th, 2025 / 23 de Mayo 2025 <br>
-													El Mirador Gastro Bar, <br>
-													Cartagena, Colombia <br>
-													5:00 - 7:00 P.M.
-											</p>
 											<span class="space space--20"></span>
 											<div class="guest-responses-container"></div>
 											<div class="navigation-buttons">
@@ -127,6 +121,49 @@ document.addEventListener("DOMContentLoaded", function () {
 											</div>
 									`;
 
+					const menuContainer = stepElement.querySelector(
+						".guest-responses-container"
+					);
+					formData.invitados.forEach((invitado) => {
+						const guestResponse = document.createElement("div");
+						guestResponse.className = "guest-response";
+						guestResponse.innerHTML = `
+							<p>${invitado.nombre}</p>
+							<div>
+									<select class="select--small" onchange="updateGuestResponse(this, this.value, 'menu', '${invitado.nombre}')">
+											<option value="">Select an option</option>
+											<option value="beef">Beef / Carne de Res</option>
+											<option value="fish">Fish / Pescado</option>
+											<option value="vegetarian">Vegetarian / Vegetariano</option>
+									</select>
+							</div>
+					`;
+						menuContainer.appendChild(guestResponse);
+					});
+				}
+				break;
+
+			case 4:
+				if (formData.numEvents === 3) {
+					stepElement.innerHTML = `
+												<h2 class="heading--32 uppercase color--836923">COCKTAIL HOUR</h2>
+												<p class="heading--24 uppercase color--4F4F4F">HORA DE CÓCTEL</p>
+												<span class="space space--20"></span>
+												<p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
+														May 23th, 2025 / 23 de Mayo 2025 <br>
+														El Mirador Gastro Bar, <br>
+														Cartagena, Colombia <br>
+														5:00 - 7:00 P.M.
+												</p>
+												<span class="space space--20"></span>
+												<div class="guest-responses-container"></div>
+												<div class="navigation-buttons">
+														<button class="button button--secondary" onclick="prevStep(3)">Back</button>
+														<span class="space space--10"></span>
+														<button class="button button--secondary" onclick="nextStep(5)">Continue</button>
+												</div>
+										`;
+
 					const cocktailContainer = stepElement.querySelector(
 						".guest-responses-container"
 					);
@@ -134,32 +171,33 @@ document.addEventListener("DOMContentLoaded", function () {
 						const guestResponse = document.createElement("div");
 						guestResponse.className = "guest-response";
 						guestResponse.innerHTML = `
-													<p>${invitado.nombre}</p>
-													<div>
-															<button class="button button--small" onclick="updateGuestResponse(this, true, 'cocktail', '${invitado.nombre}')">Accept</button>
-															<button class="button button--small" onclick="updateGuestResponse(this, false, 'cocktail', '${invitado.nombre}')">Decline</button>
-													</div>
-											`;
+														<p>${invitado.nombre}</p>
+														<div>
+																<button class="button button--small" onclick="updateGuestResponse(this, true, 'cocktail', '${invitado.nombre}')">Accept</button>
+																<button class="button button--small" onclick="updateGuestResponse(this, false, 'cocktail', '${invitado.nombre}')">Decline</button>
+														</div>
+												`;
 						cocktailContainer.appendChild(guestResponse);
 					});
 				}
 				break;
-			case 4:
+
+			case 5:
 				stepElement.innerHTML = `
-							<h2 class="heading--64 color--836923">Beach Day Makani</h2>
-							<p class="heading--14 color--4F4F4F">DÍA DE PLAYA MAKANI</p>
+							<h2 class="heading--32 uppercase color--836923">BEACH DAY MAKANI</h2>
+							<p class="heading--24 uppercase color--4F4F4F">DÍA DE PLAYA MAKANI</p>
 							<span class="space space--20"></span>
 							<p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
 									May 24th, 2025 / 24 de Mayo 2025 <br>
-									MAKANI BEACH CLUB<br>
-									9:00 P.M.
+									Makani Beach Club<br>
+									9:00 A.M.
 							</p>
 							<span class="space space--20"></span>
 							<div class="guest-responses-container"></div>
 							<div class="navigation-buttons">
-									<button class="button button--secondary" onclick="prevStep(3)">Back</button>
+									<button class="button button--secondary" onclick="prevStep(4)">Back</button>
 									<span class="space space--10"></span>
-									<button class="button button--secondary" onclick="nextStep(5)">Continue</button>
+									<button class="button button--secondary" onclick="nextStep(6)">Continue</button>
 							</div>
 					`;
 
@@ -180,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				});
 				break;
 
-			case 5:
+			case 6:
 				showAdditionalInfo();
 				break;
 
@@ -191,19 +229,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	};
 
 	window.nextStep = function (step) {
-		if (formData.numEvents === 1 && step === 3) {
-			showStep(4);
-		} else {
-			showStep(step);
-		}
+		showStep(step);
 	};
 
 	window.prevStep = function (step) {
-		if (step === 3 && formData.numEvents === 1) {
-			showStep(2);
-		} else {
-			showStep(step);
-		}
+		showStep(step);
 	};
 
 	// =========================================
@@ -243,6 +273,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		formData.invitados.push({
 			nombre: nombre,
 			wedding: null,
+			menu: null,
 			cocktail: null,
 			beach: null,
 		});
@@ -252,6 +283,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			formData.invitados.push({
 				nombre: acompanante,
 				wedding: null,
+				menu: null,
 				cocktail: null,
 				beach: null,
 			});
@@ -264,24 +296,27 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Función para actualizar respuestas
 	// =========================================
 	window.updateGuestResponse = function (
-		button,
-		isAccept,
-		eventType,
-		guestName
-	) {
-		const container = button.parentElement;
-		const buttons = container.querySelectorAll(".button--small");
+    element,
+    value,
+    eventType,
+    guestName
+) {
+    const container = element.parentElement;
+    const buttons = container.querySelectorAll(".button--small");
+    
+    // Only add button selection logic if it's not a select element
+    if (element.tagName.toLowerCase() !== 'select') {
+        buttons.forEach((btn) => btn.classList.remove("selected"));
+        element.classList.add("selected");
+    }
 
-		buttons.forEach((btn) => btn.classList.remove("selected"));
-		button.classList.add("selected");
-
-		const guestIndex = formData.invitados.findIndex(
-			(g) => g.nombre === guestName
-		);
-		if (guestIndex !== -1) {
-			formData.invitados[guestIndex][eventType] = isAccept;
-		}
-	};
+    const guestIndex = formData.invitados.findIndex(
+        (g) => g.nombre === guestName
+    );
+    if (guestIndex !== -1) {
+        formData.invitados[guestIndex][eventType] = value;
+    }
+};
 
 	// =========================================
 	// Funciones de envío
@@ -314,6 +349,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		formData.phone = document.getElementById("phone").value;
 		formData.email = document.getElementById("email").value;
+		formData.play = document.getElementById("play").value;
 		formData.restrictions = document.getElementById("restrictions").value;
 
 		if (!formData.email || !formData.phone) {
@@ -337,7 +373,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				.then((data) => {
 					stopLoading();
 					if (data.success) {
-						showStep(6);
+						showStep(7);
 					} else {
 						throw new Error(data.data || "Error al enviar el formulario");
 					}
@@ -373,7 +409,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					.then((data) => {
 						stopLoading();
 						if (data.success) {
-							showStep(6);
+							showStep(7);
 						} else {
 							throw new Error(data.data || "Error en la verificación");
 						}
