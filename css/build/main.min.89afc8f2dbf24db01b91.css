@@ -2433,6 +2433,7 @@ textarea {
   margin-top: 5px;
   padding: 20px;
   border: 0;
+  text-transform: uppercase;
   border: 1px solid var(--836923);
 }
 

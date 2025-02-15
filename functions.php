@@ -122,6 +122,7 @@ function send_rsvp_email() {
                     <div style='margin-top: 20px;'>
                         <p><strong>Address:</strong> {$rsvp_data['phone']}</p>
                         <p><strong>Email:</strong> {$rsvp_data['email']}</p>
+                        <p><strong>Song:</strong> {$rsvp_data['play']}</p>
                         <p><strong>Restrictions:</strong> {$rsvp_data['restrictions']}</p>
                     </div>
                 </div>
@@ -143,13 +144,6 @@ function send_rsvp_email() {
                 Sofitel Legend Santa Clara</p>";
             }
 
-            if (isset($invitado['menu']) && $invitado['menu']) {
-                $menu_text = ucfirst($invitado['menu']);
-                $confirmed_events .= "
-                <p><strong>Menu Selection:</strong> <br>
-                {$menu_text}</p>";
-            }
-            
             if (isset($invitado['cocktail']) && $invitado['cocktail']) {
                 $confirmed_events .= "
                 <p><strong>Welcome Cocktail</strong><br>
@@ -165,6 +159,14 @@ function send_rsvp_email() {
                 9:00 P.M.<br>
                 Makani Beach Club</p>";
             }
+
+            if (isset($invitado['menu']) && $invitado['menu']) {
+                $menu_text = ucfirst($invitado['menu']);
+                $confirmed_events .= "
+                <p><strong>Menu Selection:</strong> <br>
+                {$menu_text}</p>";
+            }
+
             $confirmed_events .= "</div>";
         }
 

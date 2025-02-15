@@ -136,6 +136,7 @@
             <input type="email" id="email">
             <span class="space space--10"></span>
             <label for="" class="heading--16 color--000" style="font-family: 'Poppins', serif; ">Share sound you would like play at reception? <br> Comparte una canción que quieras agregar al playlist de la fiesta?</label>
+            <span class="space space--10"></span>
             <input type="text" id="play">
             <span class="space space--10"></span>
             <label for="" class="heading--16 color--000" style="font-family: 'Poppins', serif; ">Tell us if you have any food allergies or restrictions? <br> Tienes alguna alergia o restricción alimentaria?</label>
