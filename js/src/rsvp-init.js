@@ -106,41 +106,46 @@ document.addEventListener("DOMContentLoaded", function () {
 				});
 				break;
 
-			case 3:
-				if (formData.numEvents === 2) {
+				case 3:
 					stepElement.innerHTML = `
-											<h2 class="heading--32 color--836923">Which menu do you prefer?</h2>
-											<p class="heading--24 color--4F4F4F">¿Qué Menú prefieres?</p>
-											<span class="space space--20"></span>
-											<span class="space space--20"></span>
-											<div class="guest-responses-container"></div>
-											<div class="navigation-buttons">
-													<button class="button button--secondary" onclick="prevStep(2)">Back</button>
-													<span class="space space--10"></span>
-													<button class="button button--secondary" onclick="nextStep(4)">Continue</button>
-											</div>
-									`;
-
-					const menuContainer = stepElement.querySelector(
-						".guest-responses-container"
-					);
-					formData.invitados.forEach((invitado) => {
-						const guestResponse = document.createElement("div");
-						guestResponse.className = "guest-response";
-						guestResponse.innerHTML = `
-							<p>${invitado.nombre}</p>
-							<div>
-									<select class="select--small" onchange="updateGuestResponse(this, this.value, 'menu', '${invitado.nombre}')">
-											<option value="">Select an option</option>
-											<option value="beef">Beef / Carne de Res</option>
-											<option value="fish">Fish / Pescado</option>
-											<option value="vegetarian">Vegetarian / Vegetariano</option>
-									</select>
+							<h2 class="heading--32 color--836923">Which menu do you prefer?</h2>
+							<p class="heading--24 color--4F4F4F">¿Qué Menú prefieres?</p>
+							<span class="space space--20"></span>
+							<p class="heading--16 color--000" style="font-family: 'Poppins', serif; ">
+									October 12th, 2025 / 12 de Octubre 2025
+									Hacienda San José, Pereira - Colombia
+									3:30 P.M.
+							</p>
+							<span class="space space--20"></span>
+							<div class="guest-responses-container"></div>
+							<div class="navigation-buttons">
+									<button class="button button--secondary" onclick="prevStep(2)">Back</button>
+									<span class="space space--10"></span>
+									<button class="button button--secondary" onclick="nextStep(4)">Continue</button>
 							</div>
 					`;
-						menuContainer.appendChild(guestResponse);
+			
+					const menuContainer = stepElement.querySelector(".guest-responses-container");
+			
+					// Iterar sobre todos los invitados que aceptaron la boda
+					formData.invitados.forEach((invitado) => {
+							if (invitado.wedding === true) {  // Solo mostrar menú para los que aceptaron
+									const guestResponse = document.createElement("div");
+									guestResponse.className = "guest-response";
+									guestResponse.innerHTML = `
+											<p>${invitado.nombre}</p>
+											<div class="select-container">
+													<select class="select--small" onchange="updateGuestResponse(this, this.value, 'menu', '${invitado.nombre}')">
+															<option value="">Select an option</option>
+															<option value="beef" ${invitado.menu === 'beef' ? 'selected' : ''}>Beef / Carne de Res</option>
+															<option value="fish" ${invitado.menu === 'fish' ? 'selected' : ''}>Fish / Pescado</option>
+															<option value="vegetarian" ${invitado.menu === 'vegetarian' ? 'selected' : ''}>Vegetarian / Vegetariano</option>
+													</select>
+											</div>
+									`;
+									menuContainer.appendChild(guestResponse);
+							}
 					});
-				}
 				break;
 
 			case 4:
@@ -295,26 +300,27 @@ document.addEventListener("DOMContentLoaded", function () {
 	// =========================================
 	// Función para actualizar respuestas
 	// =========================================
-	window.updateGuestResponse = function (
-    element,
-    value,
-    eventType,
-    guestName
-) {
+	window.updateGuestResponse = function (element, value, eventType, guestName) {
     const container = element.parentElement;
-    const buttons = container.querySelectorAll(".button--small");
-    
-    // Only add button selection logic if it's not a select element
+
+    // Lógica específica para manejo de botones
     if (element.tagName.toLowerCase() !== 'select') {
+        const buttons = container.querySelectorAll(".button--small");
         buttons.forEach((btn) => btn.classList.remove("selected"));
         element.classList.add("selected");
+    } 
+    // Lógica específica para manejo del select de menú
+    else {
+        element.querySelector(`option[value="${value}"]`)?.setAttribute('selected', 'selected');
     }
 
+    // Actualizar el estado del invitado
     const guestIndex = formData.invitados.findIndex(
         (g) => g.nombre === guestName
     );
     if (guestIndex !== -1) {
         formData.invitados[guestIndex][eventType] = value;
+        console.log(`Menú actualizado para ${guestName}: ${value}`); // Depuración
     }
 };
 

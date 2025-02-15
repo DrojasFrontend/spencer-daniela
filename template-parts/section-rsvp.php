@@ -93,9 +93,11 @@
                     <button class="button button--small" onclick="declineCocktail()">Decline</button>
                 </div>
             </div>
+            <div class="navigation-buttons">
             <button class="button button--secondary" onclick="prevStep(3)">Back</button>
             <span class="space space--10"></span>
             <button class="button button--secondary" onclick="nextStep(5)">Continue</button>
+            </div>
         </div>
 
         <!-- Step 5: Cocktail -->
