@@ -36,6 +36,12 @@ const invitados = [
     acompanantes: ["Sofia Otarola"]
   },
   {
+    nombre: "Edith Rodriguez",
+    eventos: 3,
+    confirmado: false,
+    acompanantes: ["Elsy Rodriguez"]
+  },
+  {
     nombre: "Michelle Rojas",
     eventos: 3,
     confirmado: false,
