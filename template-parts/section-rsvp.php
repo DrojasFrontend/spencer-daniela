@@ -97,13 +97,16 @@
             <h2 class="heading--64 color--836923">Additional Info</h3>
             <p class="heading--14 color--4F4F4F">INFORMACIÓN ADICIONAL</p>
             <span class="space space--20"></span>
-            <label for="" class="heading--16 color--000" style="font-family: 'Poppins', serif; ">Address / Dirección</label>
+            <label for="" class="heading--16 color--000" style="font-family: 'Poppins', serif; ">Phone / Teléfono</label>
             <input type="text" id="phone">
             <span class="space space--10"></span>
             <label for="" class="heading--16 color--000" style="font-family: 'Poppins', serif; ">Email address (Correo Electrónico)</label>
             <span class="space space--10"></span>
             <input type="email" id="email">
-            <label for="" class="heading--16 color--000" style="font-family: 'Poppins', serif; ">Tell us if you have any food allergies or restrictions. <br> Dinos si tienes alguna alergia o restricción alimentaria.</label>
+            <label for="" class="heading--16 color--000" style="font-family: 'Poppins', serif; ">Share sound you would like play at reception? <br> Comparte una canción que quieras agregar al playlist de la fiesta?</label>
+            <input type="text" id="play">
+            <span class="space space--10"></span>
+            <label for="" class="heading--16 color--000" style="font-family: 'Poppins', serif; ">Tell us if you have any food allergies or restrictions? <br> Tienes alguna alergia o restricción alimentaria?</label>
             <textarea id="restrictions"></textarea>
             <span class="space space--10"></span>
             <div class="navigation-buttons">

@@ -71,6 +71,10 @@
                 <button type="button" class="button button--primary button--left" data-open-modal="modal-3">SWIM SUIT</button>
               </div>
             </div>
+            <p>
+              * Meeting point - departure: Dock behind Bocagrande Hospital. <br>
+              Punto de encuentro - salida: Muelle detrás del Hospital Bocagrande.
+            </p>
         </div>
     </div>
 </section>
