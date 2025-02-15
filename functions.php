@@ -98,6 +98,7 @@ function send_rsvp_email() {
             </tr>";
 
         foreach ($rsvp_data['invitados'] as $invitado) {
+            $menu_selection = isset($invitado['menu']) ? ucfirst($invitado['menu']) : 'Not selected';
             $guests_table .= "<tr>
                 <td style='padding: 10px; border: 1px solid #ddd;'>{$invitado['nombre']}</td>
                 <td style='padding: 10px; border: 1px solid #ddd;'>" . (isset($invitado['wedding']) ? ($invitado['wedding'] ? 'Confirmed' : 'Declined') : 'N/A') . "</td>
@@ -144,7 +145,9 @@ function send_rsvp_email() {
 
             if (isset($invitado['menu']) && $invitado['menu']) {
                 $menu_text = ucfirst($invitado['menu']);
-                $confirmed_events .= "<p><strong>Menu Selection:</strong> {$menu_text}</p>";
+                $confirmed_events .= "
+                <p><strong>Menu Selection:</strong> <br>
+                {$menu_text}</p>";
             }
             
             if (isset($invitado['cocktail']) && $invitado['cocktail']) {
