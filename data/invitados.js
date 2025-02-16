@@ -462,7 +462,7 @@ const invitados = [
 		acompanantes: ["Kayla Kramer"],
 	},
 	{
-		nombre: "David O'neill ",
+		nombre: "David Oneill ",
 		eventos: 3,
 		confirmado: false,
 		acompanantes: ["Liz St. Lawrence"],
