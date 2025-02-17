@@ -45,7 +45,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_webpack_scripts' );
 
 // Agregar scripts necesarios
 add_action('wp_enqueue_scripts', function() {
-    wp_enqueue_script('invitados-data', get_template_directory_uri() . '/data/invitados.js', [], '1.6.2', true);
+    wp_enqueue_script('invitados-data', get_template_directory_uri() . '/data/invitados.js', [], '1.6.3', true);
     wp_enqueue_script('recaptcha', 'https://www.google.com/recaptcha/api.js?render=6Lf-UdIqAAAAAMUnAwZ3LO0lInGTx667TNOqGkEA', [], null, true);
 });
 

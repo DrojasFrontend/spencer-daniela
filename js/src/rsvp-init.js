@@ -156,11 +156,11 @@ document.addEventListener("DOMContentLoaded", function () {
 												</p>
 												<span class="space space--20"></span>
 												<p style="color: #A07F2B">
-												We are delighted to offer an open bar from 5 to 7 pm. After this time, guests are welcome to continue enjoying beverages at their own expense.
+												We are delighted to offer an open bar from 5 to 7 pm. After this time, guests are welcome to continue enjoying beverages at their own expense. This event is exclusively reserved for guests aged 18 and over.
 												</p>
 												<span class="space space--20"></span>
 												<p style="color: #A07F2B">
-												Durante este evento ofrecemos 2 horas de Open Bar de 5 a 7pm. El costo del consumo que tengan en adelante debe asumirlo cada invitado.
+												Durante este evento ofrecemos 2 horas de Open Bar de 5 a 7pm. El costo del consumo que tengan en adelante debe asumirlo cada invitado. El evento está reservado exclusivamente para personas mayores de 18 años.
 												</p>
 												<span class="space space--20"></span>
 												<div class="guest-responses-container"></div>
